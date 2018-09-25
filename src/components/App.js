@@ -3,13 +3,13 @@ import Menu from './Menu';
 import Locations from './Locations';
 
 class App extends React.Component {
-  render(){
+  render() {
     return (
       <div>
-        <Menu/>
-        {/*<Locations/>*/}
+        <Menu />
+        <Locations />
       </div>
-    )
+    );
   }
 }
 
