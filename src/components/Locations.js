@@ -22,7 +22,7 @@ const restaurants = [
 class Locations extends React.Component {
   render() {
     return (
-      <ul>
+      <ul className={'restaurant'}>
         {restaurants.map(restaurant => (
           <Branch
             key={restaurant.id}

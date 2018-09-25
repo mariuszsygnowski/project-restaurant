@@ -1,4 +1,5 @@
 import React from 'react';
+import MenuItem from './MenuItem';
 
 const menuItems = [
   {
@@ -21,18 +22,15 @@ const menuItems = [
   }
 ];
 
+const itemClassName = 'msdfgjk';
+
 class Menu extends React.Component {
   render() {
     return (
-      <div>
-        <h2>Menu</h2>
-        <ul>
-          {menuItems.map(item => (
-            <li key={item.id}>
-              {item.name}, {item.price}zł ({item.quantity})
-            </li>
-          ))}
-          {/* <MenuItem /> */}
+      <div className={'menu'}>
+        <h2 className={'menu__title'}>Menu</h2>
+        <ul className={'menu__list'}>
+            {menuItems.map(item => <MenuItem className={itemClassName} key={item.id} name={item.name} price={item.price} quantity={item.quantity}/>)}
         </ul>
       </div>
     );
