@@ -1,0 +1,22 @@
+.page {
+  display: grid;
+  grid-template-columns: 60vw 30vw;
+}
+
+h1 {
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+
+.menu {
+  padding: 2rem;
+}
+.menu__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: space-between;
+}
