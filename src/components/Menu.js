@@ -22,15 +22,15 @@ const menuItems = [
   }
 ];
 
-const itemClassName = 'msdfgjk';
-
 class Menu extends React.Component {
   render() {
     return (
       <div className={'menu'}>
         <h2 className={'menu__title'}>Menu</h2>
         <ul className={'menu__list'}>
-            {menuItems.map(item => <MenuItem className={itemClassName} key={item.id} name={item.name} price={item.price} quantity={item.quantity}/>)}
+          {menuItems.map(item => (
+            <MenuItem key={item.id} name={item.name} price={item.price} />
+          ))}
         </ul>
       </div>
     );

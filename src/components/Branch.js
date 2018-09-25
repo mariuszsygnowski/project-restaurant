@@ -3,10 +3,12 @@ import React from 'react';
 class Branch extends React.Component {
   render() {
     return (
-      <li className={'restaurant__branch'}>
-        Address: {this.props.street}, {this.props.city} | Tel:
-          {this.props.phone}
-      </li>
+      <address className={'restaurant__branch'}>
+        {this.props.street},<br />
+        {this.props.city}
+        <br />
+        <i className="fas fa-phone-square" /> {this.props.phone}
+      </address>
     );
   }
 }

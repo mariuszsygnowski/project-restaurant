@@ -22,16 +22,19 @@ const restaurants = [
 class Locations extends React.Component {
   render() {
     return (
-      <ul className={'restaurant'}>
-        {restaurants.map(restaurant => (
-          <Branch
-            key={restaurant.id}
-            street={restaurant.address.street}
-            city={restaurant.address.city}
-            phone={restaurant.phone}
-          />
-        ))}
-      </ul>
+      <div className="restaurants">
+        <h2 className="restaurants__title">Locations</h2>
+        <ul className={'restaurants__list'}>
+          {restaurants.map(restaurant => (
+            <Branch
+              key={restaurant.id}
+              street={restaurant.address.street}
+              city={restaurant.address.city}
+              phone={restaurant.phone}
+            />
+          ))}
+        </ul>
+      </div>
     );
   }
 }
